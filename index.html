@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alessia C-G — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-eyebrow">Portfolio</div>
+  <h1 class="hero-name">Alessia <span>C-G</span></h1>
+  <p class="hero-sub">Industrial Engineering · Purdue University · West Lafayette, IN</p>
+  <div class="hero-line"></div>
+</header>
+
+<!-- NAV -->
+<nav class="nav">
+  <button class="nav-tab active" onclick="switchTab('professional',this)">Professional</button>
+  <button class="nav-tab" onclick="switchTab('personal',this)">Personal</button>
+  <button class="nav-tab" onclick="switchTab('about',this)">About Me</button>
+  <button class="nav-tab" id="tab-salem" style="display:none" onclick="switchTab('salem',this)">Salem Mora</button>
+  <button class="nav-tab" id="tab-mr" style="display:none" onclick="switchTab('mr',this)">Mortal Ruins</button>
+  <button class="theme-btn" id="theme-btn" onclick="toggleTheme()">☀ Light</button>
+</nav>
+
+<!-- ═══════════════════════════ PROFESSIONAL ═══════════════════════════ -->
+<section class="panel active" id="panel-professional">
+
+  <div class="overview-banner">
+    <div class="overview-title">General Overview</div>
+    <div class="overview-row"><span class="overview-key">Goal</span>Help improve food distribution to low-access communities through engineering and data-driven solutions.</div>
+    <div class="overview-row"><span class="overview-key">Degree</span>B.S. Industrial Engineering · Purdue University · Expected May 2028</div>
+    <div class="overview-row"><span class="overview-key">Minor</span>Supply Chain Engineering Technology</div>
+  </div>
+
+  <div class="upcoming-banner">
+    <div class="upcoming-pill">Upcoming</div>
+    <div style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:600;color:var(--teal);">FedEx — Internship</div>
+    <div class="card-meta" style="margin-top:.3rem;">Summer 2026 · Details forthcoming</div>
+    <div class="card-body">Excited to be joining FedEx for an upcoming internship. More details on the role and projects to come.</div>
+  </div>
+
+  <div class="sec-label">Research</div>
+  <div class="card">
+    <div class="card-title">Undergraduate Research Assistant</div>
+    <div class="card-meta">Purdue University — Industrial Engineering · May 2025 – Present</div>
+    <div class="card-body">Analyzing nationwide datasets to evaluate accessibility of critical infrastructure and essential resources. Engineering automated Python pipelines to clean, merge, and validate multi-source national datasets. Modeling and graphing resource distribution gaps using ArcGIS Pro geospatial visualizations. Presenting findings and leading discussions on results, implications, and next-step analyses.</div>
+    <div class="tags"><span class="tag">Python</span><span class="tag">ArcGIS Pro</span><span class="tag">SecureFX/SecureCRT</span><span class="tag">Data Analytics</span><span class="tag">Geospatial Modeling</span></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Honors Science Research</div>
+    <div class="card-meta">Greenwich High School, CT · Sept 2020 – June 2024</div>
+    <div class="card-body">Designed magnesium and SiO₂-based drug delivery systems for Mevastatin to reduce calcium leakage. Authored multiple research proposals including experimental designs, timelines, and budget allocations under professional mentorship.</div>
+    <div class="tags"><span class="tag">SEM</span><span class="tag">Spectrophotometry</span><span class="tag">Centrifuge</span><span class="tag">Autoclave</span><span class="tag">Research Design</span></div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Projects</div>
+
+  <div class="card">
+    <div class="card-title">Anti-Collision Warning System</div>
+    <div class="card-meta">Purdue University — ENGR 131 · 2025</div>
+    <div class="card-body">Identified and analyzed pedestrian–bicycle collisions on a college campus. Designed and CAD-modeled multiple prototypes of a collision-awareness device incorporating sensing and alert mechanisms. Translated stakeholder needs into measurable engineering requirements and design constraints.</div>
+    <div class="tags"><span class="tag">CAD / SolidWorks</span><span class="tag">Systems Design</span><span class="tag">Technical Writing</span><span class="tag">Prototyping</span></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Independent Software Development</div>
+    <div class="card-meta">2025 – 2026</div>
+    <div class="card-body">Designed a structured input system that processes user data and generates graphical outputs for comparison and trend analysis. Identified a gap in existing online tools and delivered a unique solution, demonstrating applied problem identification and user-driven development.</div>
+    <div class="tags"><span class="tag">Python</span><span class="tag">Data Visualization</span><span class="tag">UX Iteration</span></div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Coursework</div>
+
+  <!-- COMPLETED -->
+  <div class="semester-block">
+    <div class="semester-head" onclick="toggleSem(this)">
+      <span class="semester-name">Fall 2024 <span class="status-done">Completed</span></span>
+      <span class="semester-cr">15 CR ▾</span>
+    </div>
+    <div class="semester-body">
+      <div class="course-row"><span class="course-code">CHM 11500</span><span class="course-name">General Chemistry I</span><span class="course-cr">4</span></div>
+      <div class="course-row"><span class="course-code">ENGR 13100</span><span class="course-name">Transform Ideas to Innovation I</span><span class="course-cr">2</span></div>
+      <div class="course-row"><span class="course-code">MA 16100</span><span class="course-name">Plane Analytic Geometry &amp; Calculus I</span><span class="course-cr">5</span></div>
+      <div class="course-row"><span class="course-code">ME 19900</span><span class="course-name">How Stuff Works</span><span class="course-cr">1</span></div>
+      <div class="course-row"><span class="course-code">SCLA 10200</span><span class="course-name">Critical Thinking &amp; Communication II</span><span class="course-cr">3</span></div>
+    </div>
+  </div>
+
+  <div class="semester-block">
+    <div class="semester-head" onclick="toggleSem(this)">
+      <span class="semester-name">Spring 2025 <span class="status-done">Completed</span></span>
+      <span class="semester-cr">17 CR ▾</span>
+    </div>
+    <div class="semester-body">
+      <div class="course-row"><span class="course-code">CHM 11600</span><span class="course-name">General Chemistry II</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">ENGR 13200</span><span class="course-name">Transform Ideas to Innovation II</span><span class="course-cr">2</span></div>
+      <div class="course-row"><span class="course-code">MA 16200</span><span class="course-name">Plane Analytic Geometry &amp; Calculus II</span><span class="course-cr">5</span></div>
+      <div class="course-row"><span class="course-code">PHYS 17200</span><span class="course-name">Modern Mechanics</span><span class="course-cr">4</span></div>
+      <div class="course-row"><span class="course-code">SCLA 10100</span><span class="course-name">Critical Thinking &amp; Communication I</span><span class="course-cr">3</span></div>
+    </div>
+  </div>
+
+  <div class="semester-block">
+    <div class="semester-head" onclick="toggleSem(this)">
+      <span class="semester-name">Fall 2025 <span class="status-done">Completed</span></span>
+      <span class="semester-cr">15 CR ▾</span>
+    </div>
+    <div class="semester-body">
+      <div class="course-row"><span class="course-code">CHM 11610</span><span class="course-name">General Chemistry II — Lecture</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">CHM 11630</span><span class="course-name">General Chemistry II — Virtual Lab</span><span class="course-cr">1</span></div>
+      <div class="course-row"><span class="course-code">MA 16200</span><span class="course-name">Plane Analytic Geometry &amp; Calculus II</span><span class="course-cr">5</span></div>
+      <div class="course-row"><span class="course-code">ENGL 20500</span><span class="course-name">Intro to Creative Writing</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">ENGR 39600</span><span class="course-name">Springer Executive Forum</span><span class="course-cr">2</span></div>
+      <div class="course-row"><span class="course-code">ME 27000</span><span class="course-name">Basic Mechanics I</span><span class="course-cr">3</span></div>
+    </div>
+  </div>
+
+  <div class="semester-block">
+    <div class="semester-head" onclick="toggleSem(this)">
+      <span class="semester-name">Spring 2026 <span class="status-done">Completed</span></span>
+      <span class="semester-cr">13 CR ▾</span>
+    </div>
+    <div class="semester-body">
+      <div class="course-row"><span class="course-code">IE 23000</span><span class="course-name">Probability &amp; Statistics in Engineering I</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">IE 34300</span><span class="course-name">Engineering Economics</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">MA 26100</span><span class="course-name">Multivariate Calculus</span><span class="course-cr">4</span></div>
+      <div class="course-row"><span class="course-code">ENGR 39600</span><span class="course-name">Springer Executive Forum</span><span class="course-cr">2</span></div>
+      <div class="course-row"><span class="course-code">CS 15900</span><span class="course-name">C Programming</span><span class="course-cr">3</span></div>
+    </div>
+  </div>
+
+  <!-- CURRENT -->
+  <div class="semester-block">
+    <div class="semester-head" onclick="toggleSem(this)">
+      <span class="semester-name">Fall 2026 <span class="status-curr">Current</span></span>
+      <span class="semester-cr">15 CR ▾</span>
+    </div>
+    <div class="semester-body open">
+      <div class="course-row"><span class="course-code">MA 26600</span><span class="course-name">Ordinary Differential Equations</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">IE 20000</span><span class="course-name">Industrial Engineering Seminar</span><span class="course-cr">0</span></div>
+      <div class="course-row"><span class="course-code">IE 33000</span><span class="course-name">Probability &amp; Statistics in Engineering II</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">NUCL 27300</span><span class="course-name">Mechanics of Materials</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">ECON 25100</span><span class="course-name">Microeconomics</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">MA 26500</span><span class="course-name">Linear Algebra</span><span class="course-cr">3</span></div>
+    </div>
+  </div>
+
+  <!-- FUTURE -->
+  <div class="semester-block">
+    <div class="semester-head" onclick="toggleSem(this)">
+      <span class="semester-name">Spring 2027 <span class="status-future">Upcoming</span></span>
+      <span class="semester-cr">18 CR ▾</span>
+    </div>
+    <div class="semester-body">
+      <div class="course-row"><span class="course-code">IE 33500</span><span class="course-name">Operations Research – Optimization</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">IE 33600</span><span class="course-name">Operations Research – Stochastic Models</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">EAPS 10600</span><span class="course-name">Geosciences Cinema</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">IET 31600</span><span class="course-name">Statistical Quality Control</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">IE 33200</span><span class="course-name">Computing in Industrial Engineering</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">IE 37000</span><span class="course-name">Manufacturing Processes I</span><span class="course-cr">3</span></div>
+    </div>
+  </div>
+
+  <div class="semester-block">
+    <div class="semester-head" onclick="toggleSem(this)">
+      <span class="semester-name">Fall 2027 <span class="status-future">Upcoming</span></span>
+      <span class="semester-cr">18 CR ▾</span>
+    </div>
+    <div class="semester-body">
+      <div class="course-row"><span class="course-code">IE 43100</span><span class="course-name">Industrial Engineering Design</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">IE 48600</span><span class="course-name">Work Analysis &amp; Design II</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">IET 23500</span><span class="course-name">Systems Thinking &amp; Process Improvement</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">IE 48400</span><span class="course-name">Integrated Production Systems II</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">OBHR 33000</span><span class="course-name">Introduction to Organizational Behavior</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">PHIL 11000</span><span class="course-name">Big Questions: Introduction to Philosophy</span><span class="course-cr">3</span></div>
+    </div>
+  </div>
+
+  <div class="semester-block">
+    <div class="semester-head" onclick="toggleSem(this)">
+      <span class="semester-name">Winter 2027 <span class="status-future">Upcoming</span></span>
+      <span class="semester-cr">3 CR ▾</span>
+    </div>
+    <div class="semester-body">
+      <div class="course-row"><span class="course-code">ECE 20001</span><span class="course-name">Electrical Engineering Fundamentals I</span><span class="course-cr">3</span></div>
+    </div>
+  </div>
+
+  <div class="semester-block">
+    <div class="semester-head" onclick="toggleSem(this)">
+      <span class="semester-name">Spring 2028 <span class="status-future">Upcoming</span></span>
+      <span class="semester-cr">15 CR ▾</span>
+    </div>
+    <div class="semester-body">
+      <div class="course-row"><span class="course-code">IE 47400</span><span class="course-name">Industrial Control Systems</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">IET 21400</span><span class="course-name">Intro Supply Chain Management Technology</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">IET 34300</span><span class="course-name">Technical and Service Selling</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">IE 47000</span><span class="course-name">Manufacturing Processes II</span><span class="course-cr">3</span></div>
+      <div class="course-row"><span class="course-code">PSY 12000</span><span class="course-name">Elementary Psychology</span><span class="course-cr">3</span></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Skills &amp; Certifications</div>
+  <div class="card">
+    <div style="display:flex;flex-direction:column;gap:1.1rem;">
+      <div>
+        <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:.4rem;">Certification</div>
+        <span style="display:inline-block;background:rgba(78,205,196,.08);color:var(--teal);border:1px solid rgba(78,205,196,.25);border-radius:4px;font-size:12px;font-weight:500;padding:4px 12px;">Six Sigma Green Belt — Certified October 2025</span>
+      </div>
+      <div>
+        <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:.4rem;">Programs</div>
+        <div class="tags" style="margin-top:0;"><span class="tag">Python</span><span class="tag">C</span><span class="tag">MATLAB</span><span class="tag">R</span><span class="tag">SolidWorks</span><span class="tag">ArcGIS Pro</span><span class="tag">AutoCAD</span><span class="tag">Jupyter</span><span class="tag">Microsoft Office</span></div>
+      </div>
+      <div>
+        <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:.4rem;">Languages</div>
+        <div class="card-body">English (Fluent) · Spanish (Fluent) · French (Proficient) · Italian (Learning)</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════ PERSONAL ═══════════════════════════ -->
+<section class="panel" id="panel-personal">
+
+  <div class="overview-banner">
+    <div class="overview-title">General Overview</div>
+    <div class="overview-row"><span class="overview-key">Hobbies</span>Magic: The Gathering · Writing · Drawing</div>
+    <div class="overview-row"><span class="overview-key">Future Goals</span>Publish a novel · Publish a comic</div>
+  </div>
+
+  <!-- MTG -->
+  <div class="sec-label">Magic: The Gathering Collection</div>
+  <div class="stats-grid">
+    <div class="stat-card"><div class="stat-val">5,862</div><div class="stat-label">Total Cards</div></div>
+    <div class="stat-card"><div class="stat-val">3,372</div><div class="stat-label">Unique Printings</div></div>
+    <div class="stat-card"><div class="stat-val">158</div><div class="stat-label">Sets Represented</div></div>
+    <div class="stat-card"><div class="stat-val">481</div><div class="stat-label">Foil Cards</div></div>
+    <div class="stat-card"><div class="stat-val">81</div><div class="stat-label">Mythic</div></div>
+  </div>
+
+  <!-- Scryfall search -->
+  <div class="scry-wrap">
+    <div class="chart-label">Look Up a Card</div>
+    <div class="scry-row">
+      <input class="scry-input" id="scry-name" placeholder="Card name (e.g. Lightning Bolt)" autocomplete="off">
+      <input class="scry-input" id="scry-set" placeholder="Set code optional (e.g. lci)" style="max-width:160px;" autocomplete="off">
+      <button class="scry-btn" onclick="scryfallSearch()">Search</button>
+    </div>
+    <div id="scry-result"><p class="scry-msg">Search any Magic card by name — optionally filter by set code.</p></div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-label">Rarity Breakdown</div>
+    <div class="legend">
+      <span class="legend-item"><span class="legend-dot" style="background:#e8813c;"></span>Mythic — 81</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#c9a84c;"></span>Rare — 539</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#607d8b;"></span>Uncommon — 1,492</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#3a3a48;"></span>Common — 3,750</span>
+    </div>
+    <div style="position:relative;width:100%;height:240px;"><canvas id="rarityChart"></canvas></div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-label">Top 10 Sets in Collection</div>
+    <div style="position:relative;width:100%;height:480px;"><canvas id="setsChart"></canvas></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+    <div class="chart-card">
+      <div class="chart-label">Foil vs Non-Foil</div>
+      <div class="legend">
+        <span class="legend-item"><span class="legend-dot" style="background:#c9a84c;"></span>Foil 481</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#3a3a48;"></span>Non-foil 5,381</span>
+      </div>
+      <div style="position:relative;width:100%;height:180px;"><canvas id="foilChart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-label">Languages</div>
+      <div class="legend">
+        <span class="legend-item"><span class="legend-dot" style="background:#6baed6;"></span>EN 5,748</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#e07070;"></span>FR 106</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#e8813c;"></span>JA 8</span>
+      </div>
+      <div style="position:relative;width:100%;height:180px;"><canvas id="langChart"></canvas></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Writing &amp; Storytelling</div>
+
+  <div class="card" style="border-color:rgba(107,174,214,.25);background:rgba(107,174,214,.03);">
+    <div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:.4rem;">Middle Grade Sci-Fi · 8-Book Series · Book 1 in Final Edits</div>
+    <div class="card-title" style="font-size:1.3rem;">Salem Mora</div>
+    <div style="font-family:'Playfair Display',serif;font-style:italic;color:var(--blue);font-size:.95rem;margin-top:.2rem;">The Floating Gardens of Oakthet</div>
+    <div class="card-body" style="margin-top:.6rem;">~60,000 words · Action-packed sci-fi adventure following a 14-year-old girl stranded at the edge of space.</div>
+    <button class="nav-btn" onclick="openTab('salem')">Explore Salem Mora →</button>
+  </div>
+
+  <div class="card" style="border-color:rgba(201,168,76,.25);background:rgba(201,168,76,.03);">
+    <div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem;">Original Fantasy · World-Building Project</div>
+    <div class="card-title" style="font-size:1.3rem;">Mortal Ruins</div>
+    <div class="card-body" style="margin-top:.6rem;">Custom magic system, rich world-building, a fully illustrated world map, and an original cast of characters.</div>
+    <button class="nav-btn" onclick="openTab('mr')">Explore Mortal Ruins →</button>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Collaborative Story &amp; Game Development</div>
+    <div class="card-meta">2019 – Present</div>
+    <div class="card-body">Coordinated with a team through planning and development meetings. Developed spreadsheets and documentation to organize tasks and track progress. Translated abstract creative ideas into organized story architectures, timelines, and design specifications.</div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Fandom Tools</div>
+  <a href="https://atlasskies.github.io/unordinary-ability-chart-maker/" target="_blank" class="link-card">
+    <div class="link-icon">⚡</div>
+    <div><div class="link-label">UnOrdinary — Ability Chart Maker</div><div class="link-desc">atlasskies.github.io/unordinary-ability-chart-maker</div></div>
+  </a>
+  <a href="https://atlasskies.github.io/unordinary-random-ability-chart/" target="_blank" class="link-card">
+    <div class="link-icon">◈</div>
+    <div><div class="link-label">UnOrdinary — Random Ability Chart</div><div class="link-desc">atlasskies.github.io/unordinary-random-ability-chart</div></div>
+  </a>
+
+  <div class="divider"></div>
+  <div class="sec-label">GitHub</div>
+  <a href="https://github.com/atlasskies" target="_blank" class="link-card">
+    <div class="link-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></div>
+    <div><div class="link-label">github.com/atlasskies</div><div class="link-desc">Projects, tools, and web apps</div></div>
+  </a>
+
+</section>
+
+<!-- ═══════════════════════════ ABOUT ME ═══════════════════════════ -->
+<section class="panel" id="panel-about">
+  <div style="display:flex;align-items:flex-start;gap:1.5rem;margin-bottom:2rem;flex-wrap:wrap;">
+    <div style="width:72px;height:72px;border-radius:50%;background:var(--gold-dim);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--gold);font-weight:700;flex-shrink:0;">A</div>
+    <div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--text);">Alessia C-G</h2>
+      <p style="font-size:13px;color:var(--text3);margin-top:.4rem;">Industrial Engineering · Purdue University · West Lafayette, IN</p>
+      <div class="tags" style="margin-top:.6rem;"><span class="tag">Six Sigma Green Belt</span><span class="tag">Expected May 2028</span><span class="tag">Supply Chain Minor</span></div>
+    </div>
+  </div>
+  <p class="about-intro">I'm an Industrial Engineering student at Purdue University with a passion for <strong>data, systems thinking, and creative problem-solving</strong>. My work bridges the analytical and the imaginative — from engineering automated pipelines for nationwide infrastructure research to building interactive story tools, fandom web apps, and original fiction.</p>
+  <p class="about-intro">Outside the lab, I'm a dedicated <strong>Magic: The Gathering collector</strong> (5,800+ cards across 158 sets), a multilingual communicator, and a storyteller with years of world-building experience — including a middle-grade sci-fi novel series in progress and the ongoing fantasy universe of Mortal Ruins.</p>
+  <p class="about-intro">My long-term goal is to <strong>help improve food distribution to low-access communities</strong> through engineering and data-driven systems. I believe in the power of combining technical rigor with creative ambition.</p>
+  <div class="divider"></div>
+  <div class="sec-label">Education</div>
+  <div class="card">
+    <div class="card-title">Purdue University — Edwardson School of Industrial Engineering</div>
+    <div class="card-meta">West Lafayette, IN · B.S. Industrial Engineering · Minor: Supply Chain Engineering Technology · Expected May 2028</div>
+  </div>
+  <div class="divider"></div>
+  <div class="sec-label">Languages</div>
+  <div class="about-grid">
+    <div class="stat-card"><div class="stat-val" style="font-size:1.3rem;">English</div><div class="stat-label">Fluent</div></div>
+    <div class="stat-card"><div class="stat-val" style="font-size:1.3rem;">Spanish</div><div class="stat-label">Fluent</div></div>
+    <div class="stat-card"><div class="stat-val" style="font-size:1.3rem;">French</div><div class="stat-label">Proficient</div></div>
+    <div class="stat-card"><div class="stat-val" style="font-size:1.3rem;">Italian</div><div class="stat-label">Learning</div></div>
+  </div>
+  <div class="divider"></div>
+  <div class="sec-label">Strengths</div>
+  <div class="card">
+    <div class="tags" style="margin-top:0;">
+      <span class="tag">Data Analytics</span><span class="tag">Process Optimization</span><span class="tag">Technical Writing</span><span class="tag">Cross-disciplinary Research</span><span class="tag">Team Management</span><span class="tag">Geospatial Modeling</span><span class="tag">World-Building</span><span class="tag">Creative Design</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ SALEM MORA ═══════════════════════════ -->
+<section class="panel" id="panel-salem">
+  <button class="nav-btn" style="margin-top:0;margin-bottom:1.5rem;" onclick="openTab('personal')">← Back to Personal</button>
+
+  <div class="salem-header">
+    <div style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);margin-bottom:.5rem;">Middle Grade Sci-Fi · 8-Book Series</div>
+    <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--text);line-height:1.1;">Salem Mora</div>
+    <div style="font-family:'Playfair Display',serif;font-style:italic;color:var(--blue);font-size:1.1rem;margin-top:.3rem;">The Floating Gardens of Oakthet</div>
+    <div style="display:flex;gap:1.5rem;margin-top:.85rem;flex-wrap:wrap;">
+      <span style="font-size:12px;color:var(--text3);">~60,000 words</span>
+      <span style="font-size:12px;color:var(--text3);">Action-packed Sci-Fi Adventure</span>
+      <span style="font-size:12px;color:var(--blue);font-weight:500;">Book 1 in Final Edits</span>
+    </div>
+  </div>
+
+  <div class="card" style="border-left:3px solid var(--blue);border-radius:0 var(--radius) var(--radius) 0;">
+    <div class="novel-blurb" style="border:none;padding:0;margin:0;">The second Salem stepped foot on the space station, the predictions for the future changed. Salem Mora follows a 14-year-old girl who accidentally bumps into a strange man and follows him to a technologically advanced society hidden at the edge of space. Surrounded by people who resent Earthlings — and with the teleporter she used broken for another year — she tries to lay low and wait. Except a weapon owned by a powerful man contacts her. And an even more powerful woman wants it. Two choices: pretend nothing is happening, or find the weapon and try to save a world that would hate her if they knew where she was from.</div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">The Series — 8 Books</div>
+  <div class="book-grid">
+    <div class="book-card active-book"><div class="book-num">Book 1</div><div class="book-title">The Floating Gardens of Oakthet</div><span class="book-status status-wip">In Progress</span></div>
+    <div class="book-card"><div class="book-num">Book 2</div><div class="book-title">Familiar Waters of Abelard</div><span class="book-status status-tbd">Upcoming</span></div>
+    <div class="book-card"><div class="book-num">Book 3</div><div class="book-title">Grand Champion of Wynmor</div><span class="book-status status-tbd">Upcoming</span></div>
+    <div class="book-card"><div class="book-num">Book 4</div><div class="book-title">Traveling Carnival of Tierwelt</div><span class="book-status status-tbd">Upcoming</span></div>
+    <div class="book-card"><div class="book-num">Book 5</div><div class="book-title">Forgotten Ruins of Draenog</div><span class="book-status status-tbd">Upcoming</span></div>
+    <div class="book-card"><div class="book-num">Book 6</div><div class="book-title">Ancient Keepings of Fitzuiver</div><span class="book-status status-tbd">Upcoming</span></div>
+    <div class="book-card"><div class="book-num">Book 7</div><div class="book-title">Vespens of Vallow</div><span class="book-status status-tbd">Upcoming</span></div>
+    <div class="book-card"><div class="book-num">Book 8</div><div class="book-title">Trials of Torrhex</div><span class="book-status status-tbd">Upcoming</span></div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Main Characters</div>
+  <div class="char-list">
+    <div class="char-card"><div class="char-card-name">Salem Mora</div><div class="char-card-role">Protagonist</div></div>
+    <div class="char-card"><div class="char-card-name">Tituba</div><div class="char-card-role">Character</div></div>
+    <div class="char-card"><div class="char-card-name">Vixabella Ward</div><div class="char-card-role">Character</div></div>
+    <div class="char-card"><div class="char-card-name">Mei Huang</div><div class="char-card-role">Character</div></div>
+    <div class="char-card"><div class="char-card-name">Kingsley Seibar</div><div class="char-card-role">Character</div></div>
+    <div class="char-card"><div class="char-card-name">Bilal Patel</div><div class="char-card-role">Character</div></div>
+    <div class="char-card"><div class="char-card-name">Kayla Olafur</div><div class="char-card-role">Character</div></div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">The Six Covens</div>
+  <div class="torrhex-banner">
+    <div class="torrhex-title">Torrhex</div>
+    <div class="card-body">The unifying research station that brings the six covens together. Each coven is its own independent government and society, with distinct values and ways of life — Torrhex is neutral ground where they all converge.</div>
+  </div>
+
+  <div class="coven-grid">
+    <!-- Fitzuiver — Phoenix -->
+    <div class="coven-card">
+      <svg class="coven-svg" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26 46 C20 38,14 28,17 18 C20 10,24 8,26 4 C28 8,32 10,35 18 C38 28,32 38,26 46Z" stroke="#c9a84c" stroke-width="1.3"/>
+        <path d="M17 18 C10 15,5 10,7 5 C11 10,15 14,17 18Z" stroke="#c9a84c" stroke-width="1.2"/>
+        <path d="M35 18 C42 15,47 10,45 5 C41 10,37 14,35 18Z" stroke="#c9a84c" stroke-width="1.2"/>
+        <path d="M23 46 C20 49,15 50,12 48" stroke="#c9a84c" stroke-width="1"/>
+        <path d="M29 46 C32 49,37 50,40 48" stroke="#c9a84c" stroke-width="1"/>
+        <circle cx="26" cy="24" r="3" stroke="#c9a84c" stroke-width="1"/>
+        <circle cx="26" cy="24" r="1" fill="#c9a84c"/>
+      </svg>
+      <div>
+        <div class="coven-name">Fitzuiver</div>
+        <div class="coven-animal">Phoenix</div>
+        <div class="coven-traits"><span class="trait-pos">↑ Knowledge, Tradition, Connectivity</span><br><span class="trait-neg">↓ Stagnation, Elitism</span></div>
+      </div>
+    </div>
+
+    <!-- Abelard — Elderturtle -->
+    <div class="coven-card">
+      <svg class="coven-svg" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="26" cy="28" rx="16" ry="12" stroke="#c9a84c" stroke-width="1.3"/>
+        <polygon points="26,18 34,22 34,30 26,34 18,30 18,22" stroke="#c9a84c" stroke-width="1" opacity=".7"/>
+        <circle cx="26" cy="26" r="3" stroke="#c9a84c" stroke-width=".8" opacity=".5"/>
+        <path d="M14 24 C9 20,7 14,9 10" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M14 32 C9 36,7 42,9 46" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M38 24 C43 20,45 14,43 10" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M38 32 C43 36,45 42,43 46" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round"/>
+        <circle cx="26" cy="10" r="4" stroke="#c9a84c" stroke-width="1.1"/>
+      </svg>
+      <div>
+        <div class="coven-name">Abelard</div>
+        <div class="coven-animal">Elderturtle</div>
+        <div class="coven-traits"><span class="trait-pos">↑ Logic, Strategy, Rule-driven</span><br><span class="trait-neg">↓ Coldness, Rigidity</span></div>
+      </div>
+    </div>
+
+    <!-- Oakthet — Jackelope -->
+    <div class="coven-card">
+      <svg class="coven-svg" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="26" cy="36" rx="10" ry="8" stroke="#c9a84c" stroke-width="1.3"/>
+        <circle cx="26" cy="24" r="7" stroke="#c9a84c" stroke-width="1.3"/>
+        <path d="M22 18 C21 12,21 6,23 4 C24 8,24 14,23 18Z" stroke="#c9a84c" stroke-width="1.1"/>
+        <path d="M30 18 C31 12,31 6,29 4 C28 8,28 14,29 18Z" stroke="#c9a84c" stroke-width="1.1"/>
+        <path d="M22 18 C17 14,11 13,8 10" stroke="#c9a84c" stroke-width="1" stroke-linecap="round"/>
+        <path d="M15 12 C12 8,10 4,12 2" stroke="#c9a84c" stroke-width=".9" stroke-linecap="round"/>
+        <path d="M30 18 C35 14,41 13,44 10" stroke="#c9a84c" stroke-width="1" stroke-linecap="round"/>
+        <path d="M37 12 C40 8,42 4,40 2" stroke="#c9a84c" stroke-width=".9" stroke-linecap="round"/>
+        <circle cx="23" cy="23" r="1" fill="#c9a84c"/>
+        <circle cx="29" cy="23" r="1" fill="#c9a84c"/>
+      </svg>
+      <div>
+        <div class="coven-name">Oakthet</div>
+        <div class="coven-animal">Jackelope</div>
+        <div class="coven-traits"><span class="trait-pos">↑ Grounded, Mindful, Nature-bound</span><br><span class="trait-neg">↓ Isolation, Perfectionism</span></div>
+      </div>
+    </div>
+
+    <!-- Wynmor — Windwalker (elk) -->
+    <div class="coven-card">
+      <svg class="coven-svg" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- body -->
+        <ellipse cx="27" cy="34" rx="12" ry="8" stroke="#c9a84c" stroke-width="1.3"/>
+        <!-- neck + head -->
+        <path d="M20 28 C20 22,22 18,24 16" stroke="#c9a84c" stroke-width="1.3" stroke-linecap="round"/>
+        <circle cx="25" cy="14" r="5" stroke="#c9a84c" stroke-width="1.2"/>
+        <!-- antlers left -->
+        <path d="M22 10 C18 6,14 4,10 5" stroke="#c9a84c" stroke-width="1.1" stroke-linecap="round"/>
+        <path d="M14 5 C12 2,10 1,8 2" stroke="#c9a84c" stroke-width=".9" stroke-linecap="round"/>
+        <path d="M18 7 C16 3,16 1,18 0" stroke="#c9a84c" stroke-width=".9" stroke-linecap="round"/>
+        <!-- antlers right -->
+        <path d="M28 10 C32 6,36 4,40 5" stroke="#c9a84c" stroke-width="1.1" stroke-linecap="round"/>
+        <path d="M36 5 C38 2,40 1,42 2" stroke="#c9a84c" stroke-width=".9" stroke-linecap="round"/>
+        <path d="M32 7 C34 3,34 1,32 0" stroke="#c9a84c" stroke-width=".9" stroke-linecap="round"/>
+        <!-- legs -->
+        <path d="M18 40 C17 44,16 48,15 50" stroke="#c9a84c" stroke-width="1.1" stroke-linecap="round"/>
+        <path d="M24 42 C24 46,24 49,23 51" stroke="#c9a84c" stroke-width="1.1" stroke-linecap="round"/>
+        <path d="M32 42 C32 46,32 49,33 51" stroke="#c9a84c" stroke-width="1.1" stroke-linecap="round"/>
+        <path d="M38 40 C39 44,40 48,41 50" stroke="#c9a84c" stroke-width="1.1" stroke-linecap="round"/>
+        <!-- eye -->
+        <circle cx="23" cy="13" r="1" fill="#c9a84c"/>
+      </svg>
+      <div>
+        <div class="coven-name">Wynmor</div>
+        <div class="coven-animal">Windwalker</div>
+        <div class="coven-traits"><span class="trait-pos">↑ Independent, Self-sufficient, Thoughtful</span><br><span class="trait-neg">↓ Reluctance to Seek Help</span></div>
+      </div>
+    </div>
+
+    <!-- Tierwelt — Tremoswa -->
+    <div class="coven-card">
+      <svg class="coven-svg" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- large round body -->
+        <ellipse cx="26" cy="34" rx="14" ry="11" stroke="#c9a84c" stroke-width="1.3"/>
+        <!-- round leafy head -->
+        <circle cx="26" cy="18" r="9" stroke="#c9a84c" stroke-width="1.3"/>
+        <!-- leaf crown -->
+        <path d="M26 9 C24 4,20 2,17 3 C19 6,23 8,26 9Z" stroke="#c9a84c" stroke-width="1"/>
+        <path d="M26 9 C28 4,32 2,35 3 C33 6,29 8,26 9Z" stroke="#c9a84c" stroke-width="1"/>
+        <path d="M19 12 C14 9,10 9,8 6 C11 9,16 11,19 12Z" stroke="#c9a84c" stroke-width="1"/>
+        <path d="M33 12 C38 9,42 9,44 6 C41 9,36 11,33 12Z" stroke="#c9a84c" stroke-width="1"/>
+        <!-- simple arms -->
+        <path d="M14 32 C8 27,5 20,6 14" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M38 32 C44 27,47 20,46 14" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round"/>
+        <!-- root legs -->
+        <path d="M20 44 C18 48,16 51,14 52" stroke="#c9a84c" stroke-width="1.1" stroke-linecap="round"/>
+        <path d="M32 44 C34 48,36 51,38 52" stroke="#c9a84c" stroke-width="1.1" stroke-linecap="round"/>
+        <!-- eyes -->
+        <circle cx="23" cy="18" r="1.2" fill="#c9a84c"/>
+        <circle cx="29" cy="18" r="1.2" fill="#c9a84c"/>
+      </svg>
+      <div>
+        <div class="coven-name">Tierwelt</div>
+        <div class="coven-animal">Tremoswa</div>
+        <div class="coven-traits"><span class="trait-pos">↑ Charismatic, Inspirational, Mediators</span><br><span class="trait-neg">↓ Manipulative, Exclusivity</span></div>
+      </div>
+    </div>
+
+    <!-- Draenog — Hedgehog -->
+    <div class="coven-card">
+      <svg class="coven-svg" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- body -->
+        <ellipse cx="24" cy="36" rx="14" ry="10" stroke="#c9a84c" stroke-width="1.3"/>
+        <!-- spine dome -->
+        <path d="M10 36 C10 24,38 24,38 36" stroke="#c9a84c" stroke-width="1.3"/>
+        <!-- spines -->
+        <line x1="26" y1="24" x2="26" y2="10" stroke="#c9a84c" stroke-width="1.1" stroke-linecap="round"/>
+        <line x1="21" y1="25" x2="16" y2="12" stroke="#c9a84c" stroke-width="1.1" stroke-linecap="round"/>
+        <line x1="31" y1="25" x2="36" y2="12" stroke="#c9a84c" stroke-width="1.1" stroke-linecap="round"/>
+        <line x1="16" y1="29" x2="8" y2="18" stroke="#c9a84c" stroke-width="1" stroke-linecap="round"/>
+        <line x1="36" y1="29" x2="44" y2="18" stroke="#c9a84c" stroke-width="1" stroke-linecap="round"/>
+        <!-- spine tips -->
+        <circle cx="26" cy="10" r="1.2" fill="#c9a84c"/>
+        <circle cx="16" cy="12" r="1.2" fill="#c9a84c"/>
+        <circle cx="36" cy="12" r="1.2" fill="#c9a84c"/>
+        <circle cx="8"  cy="18" r="1"   fill="#c9a84c"/>
+        <circle cx="44" cy="18" r="1"   fill="#c9a84c"/>
+        <!-- snout -->
+        <ellipse cx="36" cy="37" rx="5" ry="4" stroke="#c9a84c" stroke-width="1.1"/>
+        <circle cx="39" cy="36" r="1.5" fill="#c9a84c"/>
+        <!-- eye -->
+        <circle cx="34" cy="33" r="1" fill="#c9a84c"/>
+      </svg>
+      <div>
+        <div class="coven-name">Draenog</div>
+        <div class="coven-animal">Hedgehog</div>
+        <div class="coven-traits"><span class="trait-pos">↑ Altruistic, Tolerant, Humble</span><br><span class="trait-neg">↓ Martyrdom, Dependency</span></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════ MORTAL RUINS ═══════════════════════════ -->
+<section class="panel" id="panel-mr">
+  <button class="nav-btn" style="margin-top:0;margin-bottom:1.5rem;" onclick="openTab('personal')">← Back to Personal</button>
+
+  <div class="mr-banner-wrap">
+    <img src="assets/logo.png" alt="Mortal Ruins logo" class="mr-banner">
+  </div>
+
+  <div style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:.5rem;">
+    An original fantasy universe built around a custom magic system, richly developed factions, a fully illustrated world map, and a cast of original characters — developed through years of collaborative world-building, iterative writing, and creative design.
+  </div>
+  <div class="artist-credit">Artwork by <a href="https://www.instagram.com/behind.wd?igshid=YmMyMTA2M2Y%3D" target="_blank">@behind.wd</a> on Instagram.</div>
+
+  <div style="margin-top:1rem;">
+    <a href="https://atlasskies.github.io/ruins-writer/" target="_blank" class="link-card" style="margin-bottom:1.5rem;">
+      <div class="link-icon">✦</div>
+      <div><div class="link-label">Magic System Maker</div><div class="link-desc">atlasskies.github.io/ruins-writer</div></div>
+    </a>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">The Cast</div>
+  <img src="assets/cast.jpg" alt="Mortal Ruins full character lineup" class="mr-cast">
+  <div class="char-names">
+    <div class="char-name">Amar</div><div class="char-name">Sarana</div><div class="char-name">Averna</div>
+    <div class="char-name">Elis</div><div class="char-name">Montego</div><div class="char-name">Vugle</div>
+    <div class="char-name">Revi</div><div class="char-name">Orion</div>
+  </div>
+
+  <!-- Character gallery -->
+  <div class="char-gallery">
+    <div class="char-tile"><img src="assets/aimar.jpg" alt="Amar"><div class="char-tile-name">Amar</div></div>
+    <div class="char-tile"><img src="assets/sarana.jpg" alt="Sarana"><div class="char-tile-name">Sarana</div></div>
+    <div class="char-tile"><img src="assets/averna.jpg" alt="Averna"><div class="char-tile-name">Averna</div></div>
+    <div class="char-tile"><img src="assets/elis.jpg" alt="Elis"><div class="char-tile-name">Elis</div></div>
+    <div class="char-tile"><img src="assets/montego.jpg" alt="Montego"><div class="char-tile-name">Montego</div></div>
+    <div class="char-tile"><img src="assets/vugle.jpg" alt="Vugle"><div class="char-tile-name">Vugle</div></div>
+    <div class="char-tile"><img src="assets/revi.jpg" alt="Revi"><div class="char-tile-name">Revi</div></div>
+    <div class="char-tile"><img src="assets/orion.jpg" alt="Orion"><div class="char-tile-name">Orion</div></div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">World Map</div>
+  <img src="assets/map.jpg" alt="Mortal Ruins world map" class="mr-map">
+  <div class="region-chips">
+    <div class="region-chip">Mandua Kingdom</div>
+    <div class="region-chip">Island of Space</div>
+    <div class="region-chip">Param Dynasty</div>
+    <div class="region-chip">The Outer Ruins</div>
+    <div class="region-chip">Unsacred Ruins</div>
+    <div class="region-chip">Japitet Kana of Light</div>
+    <div class="region-chip">Remora Empire</div>
+  </div>
+
+</section>
+
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="js/main.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/scryfall.js"></script>
+</body>
+</html>
