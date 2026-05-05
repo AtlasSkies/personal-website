@@ -1,4 +1,3 @@
-// ── Tab switching ──
 function switchTab(id, el) {
   document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
   document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
@@ -8,31 +7,27 @@ function switchTab(id, el) {
 }
 
 function openTab(id) {
-  if (id === 'salem') document.getElementById('tab-salem').style.display = '';
-  if (id === 'mr')    document.getElementById('tab-mr').style.display = '';
+  ['salem','mr','mtg'].forEach(tid => {
+    document.getElementById('tab-'+tid).style.display = tid === id ? '' : 'none';
+  });
+  if (['salem','mr','mtg'].includes(id)) document.getElementById('tab-'+id).style.display = '';
   const tab = document.getElementById('tab-' + id);
   if (tab) switchTab(id, tab);
 }
 
-// ── Semester accordion ──
 function toggleSem(el) {
   el.nextElementSibling.classList.toggle('open');
 }
 
-// ── Theme toggle ──
 function toggleTheme() {
-  const body = document.body;
-  const btn  = document.getElementById('theme-btn');
-  body.classList.toggle('light');
-  const isLight = body.classList.contains('light');
-  btn.textContent = isLight ? '☽ Dark' : '☀ Light';
+  document.body.classList.toggle('light');
+  const isLight = document.body.classList.contains('light');
+  document.getElementById('theme-btn').textContent = isLight ? '☽ Dark' : '☀ Light';
   localStorage.setItem('theme', isLight ? 'light' : 'dark');
 }
 
-// Apply saved theme on load
 document.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem('theme');
-  if (saved === 'light') {
+  if (localStorage.getItem('theme') === 'light') {
     document.body.classList.add('light');
     const btn = document.getElementById('theme-btn');
     if (btn) btn.textContent = '☽ Dark';
