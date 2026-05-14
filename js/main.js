@@ -1,3 +1,5 @@
+const SUB_TABS = ['salem', 'mr', 'mtg', 'z101'];
+
 function switchTab(id, el) {
   document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
   document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
@@ -7,10 +9,11 @@ function switchTab(id, el) {
 }
 
 function openTab(id) {
-  ['salem','mr','mtg'].forEach(tid => {
-    document.getElementById('tab-'+tid).style.display = tid === id ? '' : 'none';
+  // Show the right sub-tab, hide others
+  SUB_TABS.forEach(tid => {
+    const t = document.getElementById('tab-' + tid);
+    if (t) t.style.display = (tid === id) ? '' : 'none';
   });
-  if (['salem','mr','mtg'].includes(id)) document.getElementById('tab-'+id).style.display = '';
   const tab = document.getElementById('tab-' + id);
   if (tab) switchTab(id, tab);
 }

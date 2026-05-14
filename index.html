@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atlas Skies — Portfolio</title>
+<title>Alessia C-G — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -12,7 +12,7 @@
 
 <header class="hero">
   <div class="hero-eyebrow">Portfolio</div>
-  <h1 class="hero-name">Atlas <span>Skies</span></h1>
+  <h1 class="hero-name">Alessia <span>C-G</span></h1>
   <p class="hero-sub">Industrial Engineering · Purdue University · West Lafayette, IN</p>
   <div class="hero-line"></div>
 </header>
@@ -24,6 +24,7 @@
   <button class="nav-tab" id="tab-mtg" style="display:none" onclick="switchTab('mtg',this)">MTG Collection</button>
   <button class="nav-tab" id="tab-salem" style="display:none" onclick="switchTab('salem',this)">Salem Mora</button>
   <button class="nav-tab" id="tab-mr" style="display:none" onclick="switchTab('mr',this)">Mortal Ruins</button>
+  <button class="nav-tab" id="tab-z101" style="display:none" onclick="switchTab('z101',this)">Zombie 101</button>
   <button class="theme-btn" id="theme-btn" onclick="toggleTheme()">☀ Light</button>
 </nav>
 
@@ -204,10 +205,11 @@
     <div class="card-body" style="margin-top:.6rem;">Custom magic system, rich world-building, a fully illustrated world map, and an original cast of characters.</div>
     <button class="nav-btn" onclick="openTab('mr')">Explore Mortal Ruins →</button>
   </div>
-  <div class="card">
-    <div class="card-title">Collaborative Story &amp; Game Development</div>
-    <div class="card-meta">2019 – Present</div>
-    <div class="card-body">Coordinated with a team through planning and development meetings. Translated abstract creative ideas into organized story architectures, timelines, and design specifications.</div>
+  <div class="card" style="border-color:rgba(116,196,118,.25);background:rgba(116,196,118,.03);">
+    <div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:.4rem;">Comedy Fantasy Franchise · Multiple Media in Production</div>
+    <div class="card-title" style="font-size:1.3rem;">Zombie 101 Universe</div>
+    <div class="card-body" style="margin-top:.6rem;">A multi-media franchise set during a magical zombie apocalypse that engulfs the entire world — featuring a comic, a video game, and more in active development. Lead writer and coordinator.</div>
+    <button class="nav-btn" style="border-color:rgba(116,196,118,.35);color:var(--green);background:rgba(116,196,118,.08);" onclick="openTab('z101')">Explore Zombie 101 Universe →</button>
   </div>
 
   <div class="divider"></div>
@@ -240,13 +242,13 @@
   <div style="display:flex;align-items:flex-start;gap:1.5rem;margin-bottom:2rem;flex-wrap:wrap;">
     <div style="width:72px;height:72px;border-radius:50%;background:var(--gold-dim);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--gold);font-weight:700;flex-shrink:0;">A</div>
     <div>
-      <h2 style="font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--text);">Atlas Skies</h2>
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--text);">Alessia C-G</h2>
       <p style="font-size:13px;color:var(--text3);margin-top:.4rem;">Industrial Engineering · Purdue University · West Lafayette, IN</p>
       <div class="tags" style="margin-top:.6rem;"><span class="tag">Six Sigma Green Belt</span><span class="tag">Expected May 2028</span><span class="tag">Supply Chain Minor</span></div>
     </div>
   </div>
   <p class="about-intro">I'm an Industrial Engineering student at Purdue University focusing on <strong>data, interconnected systems, and creative problem-solving</strong>. During the first semester of my sophomore year, I joined a research group dedicated to mapping accessibility to essential services throughout the United States. I work under a graduate student who hopes to graduate by the end of Spring 2027, so by then I hope to have a new graduate student to work for, or possibly focus on some of my own research.</p>
-  <p class="about-intro">Outside the lab, I collect <strong>Magic: The Gathering</strong> cards, and write stories, focusing heavily on world building. The two stories I am currently focusing on are Salem Mora and Mortal Ruins.</p>
+  <p class="about-intro">Outside the lab, I collect <strong>Magic: The Gathering</strong> cards, and write stories, focusing heavily on world building. The projects I am currently working on are Salem Mora, Mortal Ruins, and the Zombie 101 Universe.</p>
   <p class="about-intro">My long-term goal is to <strong>help improve food distribution to low-access communities</strong>. World hunger currently isn't an issue of material but rather logistics. I hope to one day be able to play a part in food distribution and lower the amount of food wasted.</p>
   <div class="divider"></div>
   <div class="sec-label">Education</div>
@@ -352,14 +354,14 @@
   <div class="divider"></div>
   <div class="sec-label">The Series — 8 Books</div>
   <div class="book-grid">
-    <div class="book-card active-book"><div class="book-num">Book 1</div><div class="book-title">The Floating Gardens of Oakthet</div><span class="book-status status-wip">In Progress</span></div>
-    <div class="book-card"><div class="book-num">Book 2</div><div class="book-title">Familiar Waters of Abelard</div><span class="book-status status-tbd">Upcoming</span></div>
-    <div class="book-card"><div class="book-num">Book 3</div><div class="book-title">Grand Champion of Wynmor</div><span class="book-status status-tbd">Upcoming</span></div>
-    <div class="book-card"><div class="book-num">Book 4</div><div class="book-title">Traveling Carnival of Tierwelt</div><span class="book-status status-tbd">Upcoming</span></div>
-    <div class="book-card"><div class="book-num">Book 5</div><div class="book-title">Forgotten Ruins of Draenog</div><span class="book-status status-tbd">Upcoming</span></div>
-    <div class="book-card"><div class="book-num">Book 6</div><div class="book-title">Ancient Keepings of Fitzuiver</div><span class="book-status status-tbd">Upcoming</span></div>
-    <div class="book-card"><div class="book-num">Book 7</div><div class="book-title">Vespens of Vallow</div><span class="book-status status-tbd">Upcoming</span></div>
-    <div class="book-card"><div class="book-num">Book 8</div><div class="book-title">Trials of Torrhex</div><span class="book-status status-tbd">Upcoming</span></div>
+    <div class="book-card active-book"><div class="book-num">Book 1</div><div class="book-title">The Floating Gardens of Oakthet</div><span class="book-status status-wip">Final Edits</span></div>
+    <div class="book-card"><div class="book-num">Book 2</div><div class="book-title">Familiar Waters of Abelard</div><span class="book-status status-wip">Fully Planned</span></div>
+    <div class="book-card"><div class="book-num">Book 3</div><div class="book-title">Grand Champion of Wynmor</div><span class="book-status status-wip">Fully Planned</span></div>
+    <div class="book-card"><div class="book-num">Book 4</div><div class="book-title">Traveling Carnival of Tierwelt</div><span class="book-status status-tbd">Concept</span></div>
+    <div class="book-card"><div class="book-num">Book 5</div><div class="book-title">Forgotten Ruins of Draenog</div><span class="book-status status-tbd">Concept</span></div>
+    <div class="book-card"><div class="book-num">Book 6</div><div class="book-title">Ancient Keepings of Fitzuiver</div><span class="book-status status-tbd">Concept</span></div>
+    <div class="book-card"><div class="book-num">Book 7</div><div class="book-title">Vespens of Vallow</div><span class="book-status status-tbd">Concept</span></div>
+    <div class="book-card"><div class="book-num">Book 8</div><div class="book-title">Trials of Torrhex</div><span class="book-status status-tbd">Concept</span></div>
   </div>
 
   <div class="divider"></div>
@@ -463,6 +465,18 @@
   </div>
 
   <div class="divider"></div>
+
+  <div class="sec-label">Overview</div>
+  <div class="card" style="border-left:3px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;">
+    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:.75rem;">
+      <div><div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-bottom:.25rem;">Status</div><span style="display:inline-block;background:rgba(78,205,196,.1);color:var(--teal);border:1px solid rgba(78,205,196,.3);border-radius:4px;font-size:12px;font-weight:500;padding:3px 10px;">Season 1 in Development</span></div>
+      <div><div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-bottom:.25rem;">Structure</div><span style="font-size:13px;color:var(--text2);">3 Seasons</span></div>
+    </div>
+    <div style="font-size:14px;color:var(--text2);line-height:1.8;font-style:italic;">After barely surviving an attempt on his life, Elis is rescued by Amar — a mysterious and powerful girl he can't help but trust. Pulled into her conflict, he finds himself entangled in forces far more powerful than himself: political tensions that have been building for years, and ancient battles thousands of years in the making. All of it tied to a single name: The Watcher.</div>
+    <div style="font-size:12px;color:var(--text3);margin-top:.75rem;">Season 1 is scripted and in development. Seasons 2 and 3 are in the works.</div>
+  </div>
+
+  <div class="divider"></div>
   <div class="sec-label">The Cast</div>
   <img src="assets/cast.jpg" alt="Mortal Ruins full character lineup" class="mr-cast">
 
@@ -472,7 +486,7 @@
       <div class="char-stack-info">
         <div class="char-stack-name">Amar</div>
         <div class="char-stack-role-line"><span class="char-role-pill">Main Character</span><span class="char-type-pill">Mage</span></div>
-        <div class="char-stack-desc">The protagonist of Mortal Ruins. Blue-haired and wielding an oversized sword, Amar carries a quiet confidence and a hint of mystery.</div>
+        <div class="char-stack-desc">A confident and powerful knight hunting The Watcher — a mysterious figure who disappeared years ago. Amar recruits whoever she needs, whether they like it or not.</div>
       </div>
     </div>
     <div class="char-stack-item">
@@ -480,6 +494,7 @@
       <div class="char-stack-info">
         <div class="char-stack-name">Sarana</div>
         <div class="char-stack-role-line"><span class="char-role-pill">Main Antagonist</span><span class="char-type-pill">Fairy</span></div>
+        <div class="char-stack-desc">A high-ranking knight who once worked closely with The Watcher. After a powerful spell was cast on her, she can no longer remember his identity — only that he killed a close friend of hers.</div>
       </div>
     </div>
     <div class="char-stack-item">
@@ -487,6 +502,7 @@
       <div class="char-stack-info">
         <div class="char-stack-name">Averna</div>
         <div class="char-stack-role-line"><span class="char-role-pill">Secondary Antagonist</span><span class="char-type-pill">Angel</span></div>
+        <div class="char-stack-desc">An advisor to Sarana, she follows along quietly doing Sarana's bidding.</div>
       </div>
     </div>
     <div class="char-stack-item">
@@ -494,6 +510,7 @@
       <div class="char-stack-info">
         <div class="char-stack-name">Elis</div>
         <div class="char-stack-role-line"><span class="char-role-pill">Secondary Character</span><span class="char-type-pill">Human</span></div>
+        <div class="char-stack-desc">A former high-ranking official who barely survived an attempt on his life orchestrated by Sarana. He knows no life outside his comfortable royal world — but when presented with an opportunity to gain power, he can't refuse.</div>
       </div>
     </div>
     <div class="char-stack-item">
@@ -501,6 +518,7 @@
       <div class="char-stack-info">
         <div class="char-stack-name">Montego</div>
         <div class="char-stack-role-line"><span class="char-role-pill">Secondary Character</span><span class="char-type-pill">Werewolf</span></div>
+        <div class="char-stack-desc">A foot soldier who only survived a battle by deserting. He vows to avenge his fallen comrades by killing The Watcher.</div>
       </div>
     </div>
     <div class="char-stack-item">
@@ -508,6 +526,7 @@
       <div class="char-stack-info">
         <div class="char-stack-name">Vugle</div>
         <div class="char-stack-role-line"><span class="char-role-pill">Secondary Character</span><span class="char-type-pill">Elf</span></div>
+        <div class="char-stack-desc">A cruel king recently dethroned by Sarana, he vows to avenge himself by any means — even if it means rebuilding an army from scratch.</div>
       </div>
     </div>
     <div class="char-stack-item">
@@ -515,6 +534,7 @@
       <div class="char-stack-info">
         <div class="char-stack-name">Revi</div>
         <div class="char-stack-role-line"><span class="char-role-pill">Secondary Character</span><span class="char-type-pill">Phoenix</span></div>
+        <div class="char-stack-desc">A high-ranking advisor who wants his position back in his kingdom, but wrestles with doubt about how far he should go to get it.</div>
       </div>
     </div>
     <div class="char-stack-item">
@@ -522,6 +542,7 @@
       <div class="char-stack-info">
         <div class="char-stack-name">Orion</div>
         <div class="char-stack-role-line"><span class="char-role-pill">Main Character</span><span class="char-type-pill">Shapeshifter</span></div>
+        <div class="char-stack-desc">A prince who recently had his best friend sent to the front lines. Unable to accept it, he runs away from home to find him.</div>
       </div>
     </div>
   </div>
@@ -545,6 +566,8 @@
 <script src="js/charts.js"></script>
 <script src="js/scryfall.js"></script>
 <script>
+// Ensure z101 tab shows on openTab
+const SUB_TABS = ['salem','mr','mtg','z101'];
 // Scroll-away nav
 let lastY = 0;
 const nav = document.getElementById('main-nav');
@@ -555,5 +578,67 @@ window.addEventListener('scroll', () => {
   lastY = y;
 }, { passive: true });
 </script>
+
+<!-- ═══ ZOMBIE 101 UNIVERSE ═══ -->
+<section class="panel" id="panel-z101">
+  <button class="nav-btn" style="margin-top:0;margin-bottom:1.5rem;border-color:rgba(116,196,118,.35);color:var(--green);background:rgba(116,196,118,.08);" onclick="openTab('personal')">← Back to Personal</button>
+
+  <div style="background:linear-gradient(135deg,rgba(116,196,118,.08),rgba(116,196,118,.02));border:1px solid rgba(116,196,118,.25);border-left:3px solid var(--green);border-radius:0 var(--radius) var(--radius) 0;padding:2rem 1.75rem;margin-bottom:1.5rem;">
+    <div style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--green);margin-bottom:.5rem;">Comedy Fantasy · Multi-Media Franchise</div>
+    <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--text);line-height:1.1;">Zombie 101 Universe</div>
+    <div style="font-size:14px;color:var(--text2);line-height:1.75;margin-top:.75rem;">A multi-media franchise set during a magical zombie apocalypse that engulfs the entire world. Comedy fantasy stories told across different continents, different media, and different casts — all sharing the same chaotic, flower-blooming, magic-item-hoarding world.</div>
+  </div>
+
+  <div class="sec-label">Story 1</div>
+  <div class="card" style="border-color:rgba(116,196,118,.2);">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:.75rem;">
+      <div>
+        <div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:.3rem;">Comic · North America</div>
+        <div class="card-title" style="font-size:1.15rem;">How to (NOT) Survive a Zombie Apocalypse 101</div>
+      </div>
+      <span style="display:inline-block;background:rgba(116,196,118,.12);color:var(--green);border:1px solid rgba(116,196,118,.3);border-radius:4px;font-size:11px;font-weight:500;padding:3px 10px;white-space:nowrap;">Scripting</span>
+    </div>
+    <div class="card-meta">Role: Lead Writer &amp; Coordinator</div>
+    <div class="card-body">Magical items have started appearing throughout the world, granting bizarre abilities to whoever uses them. Strange flowers bloom from the ground, engulfing entire cities. In the chaos, groups form for survival — and one of them takes in Brooke, promising to keep her safe as long as Amber and Alie can track down Cal: a dangerous and violent person who did the group serious damage. Meanwhile, Jackie lives on the city outskirts and has to sneak in to get medicine for his brothers. He stumbles across someone badly injured — Cal himself — and brings him home, unaware of who he is. Ellyse seems to know a suspicious amount about this apocalypse, Kenza found a warship and now has to figure out how to survive alone, and May is a kleptomaniac who loves stealing magical items and stumbles across Jackie's trading post.</div>
+    <div class="divider" style="margin:1rem 0;"></div>
+    <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:.6rem;">Characters</div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;">
+      <span class="tag">Lazzie</span><span class="tag">Zypher</span><span class="tag">Amber</span><span class="tag">Brooke</span><span class="tag">Alie</span><span class="tag">Ellyse</span><span class="tag">Kenza</span><span class="tag">May</span><span class="tag">Kevin</span><span class="tag">Jackie</span><span class="tag">Ben</span><span class="tag">Dorian</span><span class="tag">Cal</span>
+    </div>
+    <div style="margin-top:.75rem;font-size:12px;color:var(--text3);">Amber is Brooke's older sister · Jackie is Ben and Dorian's older brother · Ben and Dorian are twins · Alie is Brooke's best friend</div>
+  </div>
+
+  <div class="sec-label">Story 2</div>
+  <div class="card" style="border-color:rgba(116,196,118,.2);">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:.75rem;">
+      <div>
+        <div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:.3rem;">Video Game · Asia</div>
+        <div class="card-title" style="font-size:1.15rem;">How to Find Grandpa in a Zombie Apocalypse 101</div>
+      </div>
+      <span style="display:inline-block;background:rgba(201,168,76,.1);color:var(--gold);border:1px solid rgba(201,168,76,.25);border-radius:4px;font-size:11px;font-weight:500;padding:3px 10px;white-space:nowrap;">Planning</span>
+    </div>
+    <div class="card-meta">Role: Lead Writer &amp; Coordinator</div>
+    <div class="card-body">Your friend's grandpa has gone missing — and now you have to find him. Traverse across Asia, meeting characters along the way and helping them with their own quests. As you uncover more of the world, you push the zombies back. A collaborative, expanding adventure about connection, community, and finding the people you love in the middle of the end of the world.</div>
+    <div class="divider" style="margin:1rem 0;"></div>
+    <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:.6rem;">Characters</div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;">
+      <span class="tag">Player Character</span><span class="tag">Best Friend</span><span class="tag">Yeye</span>
+    </div>
+    <div style="margin-top:.75rem;font-size:12px;color:var(--text3);">Yeye is the best friend's grandpa</div>
+  </div>
+
+  <div class="sec-label">Story 3</div>
+  <div class="card" style="border-color:rgba(116,196,118,.2);">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:.75rem;">
+      <div>
+        <div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:.3rem;">South America</div>
+        <div class="card-title" style="font-size:1.15rem;">How to Kill Members of the Court during a Zombie Apocalypse 101</div>
+      </div>
+      <span style="display:inline-block;background:rgba(90,88,84,.15);color:var(--text3);border:1px solid rgba(90,88,84,.3);border-radius:4px;font-size:11px;font-weight:500;padding:3px 10px;white-space:nowrap;">Concept</span>
+    </div>
+    <div class="card-meta">Role: Support Writer</div>
+    <div class="card-body">A story set in South America featuring a rotating cast of characters, each based on a tarot card. Early concept stage.</div>
+  </div>
+</section>
 </body>
 </html>
